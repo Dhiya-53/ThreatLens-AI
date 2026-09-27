@@ -216,3 +216,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==============================================================================
+# ThreatLens AI Project Rules
+# ==============================================================================
+# IDE Settings
+.vscode/
+.idea/
+
+# Large Datasets & Processed Artifacts (>100MB Git limits)
+data/raw/
+data/processed/*.csv
+data/processed/*.parquet
+*.csv
+*.pcap
+
+# Serialized ML Model Artifacts & Scalers
+models/*.joblib
+models/*.pkl
+
+# Databases & Audit Logs
+*.db
+app/*.db
+app/*.sqlite3
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
